@@ -1,0 +1,90 @@
+{{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "canadacentral"
+        },
+        "networkInterfaceName": {
+            "value": "nic-az-dc01-ca"
+        },
+        "networkSecurityGroupName": {
+            "value": "NSG-AZ-DC01-CA"
+        },
+        "networkSecurityGroupRules": {
+            "value": []
+        },
+        "subnetName": {
+            "value": "Subnet-2"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/0ab6aa66-5156-4738-a3b4-0a731a3b02d4/resourceGroups/AZ-HVnet02-CA/providers/Microsoft.Network/virtualNetworks/AZ-HVnet02"
+        },
+        "virtualMachineName": {
+            "value": "AZ-DC01-CA"
+        },
+        "virtualMachineComputerName": {
+            "value": "AZ-DC01-CA"
+        },
+        "virtualMachineRG": {
+            "value": "RG-DC01-CA"
+        },
+        "osDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "osDiskDeleteOption": {
+            "value": "Delete"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B2ms"
+        },
+        "nicDeleteOption": {
+            "value": "Detach"
+        },
+        "hibernationEnabled": {
+            "value": false
+        },
+        "adminUsername": {
+            "value": "moonpie"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "patchMode": {
+            "value": "AutomaticByOS"
+        },
+        "enableHotpatching": {
+            "value": false
+        },
+        "securityType": {
+            "value": "TrustedLaunch"
+        },
+        "secureBoot": {
+            "value": true
+        },
+        "vTPM": {
+            "value": true
+        },
+        "OSDiskname": {
+            "value": "OSDISK-dc01-ca"
+        },
+        "backupVaultName": {
+            "value": "AZ-HSVault-Toronto"
+        },
+        "backupFabricName": {
+            "value": "Azure"
+        },
+        "backupVaultRGName": {
+            "value": "Default-RecoveryServices-ResourceGroup-eastus"
+        },
+        "backupVaultRGIsNew": {
+            "value": false
+        },
+        "backupPolicyName": {
+            "value": "HSX-EnhancedPolicy-15Days-Daily"
+        },
+        "backupItemName": {
+            "value": "vm;iaasvmcontainerv2;RG-DC01-CA;AZ-DC01-CA"
+        }
+    }
+}
