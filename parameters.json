@@ -6,10 +6,10 @@
             "value": "canadacentral"
         },
         "networkInterfaceName": {
-            "value": "az-dc01-ca362"
+            "value": "nic-az-dc01-ca"
         },
         "networkSecurityGroupName": {
-            "value": "AZ-DC01-CA-nsg"
+            "value": "NSG-AZ-DC01-CA"
         },
         "networkSecurityGroupRules": {
             "value": []
