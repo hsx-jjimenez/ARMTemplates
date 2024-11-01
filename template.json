@@ -145,7 +145,7 @@
                 },
                 "storageProfile": {
                     "osDisk": {
-                        "name": "OSDISKdc01-ca",
+                        "name": "OSDISKDC01-ca",
                         "createOption": "fromImage",
                         "managedDisk": {
                             "storageAccountType": "[parameters('osDiskType')]"
