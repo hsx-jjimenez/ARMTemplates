@@ -1,4 +1,4 @@
-{{
+{
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
@@ -6,10 +6,10 @@
             "value": "canadacentral"
         },
         "networkInterfaceName": {
-            "value": "nic-az-dc01-ca"
+            "value": "az-dc01-ca362"
         },
         "networkSecurityGroupName": {
-            "value": "NSG-AZ-DC01-CA"
+            "value": "AZ-DC01-CA-nsg"
         },
         "networkSecurityGroupRules": {
             "value": []
@@ -64,9 +64,6 @@
         },
         "vTPM": {
             "value": true
-        },
-        "OSDiskname": {
-            "value": "OSDISK-dc01-ca"
         },
         "backupVaultName": {
             "value": "AZ-HSVault-Toronto"
