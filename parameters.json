@@ -3,31 +3,31 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "canadacentral"
+            "value": "eastus"
         },
         "networkInterfaceName": {
-            "value": "nic-az-dc01-ca"
+            "value": "nic-az-dc02-us"
         },
         "networkSecurityGroupName": {
-            "value": "NSG-AZ-DC01-CA"
+            "value": "NSG-AZ-DC02-US"
         },
         "networkSecurityGroupRules": {
             "value": []
         },
         "subnetName": {
-            "value": "Subnet-2"
+            "value": "Subnet-1"
         },
         "virtualNetworkId": {
-            "value": "/subscriptions/0ab6aa66-5156-4738-a3b4-0a731a3b02d4/resourceGroups/AZ-HVnet02-CA/providers/Microsoft.Network/virtualNetworks/AZ-HVnet02"
+            "value": "/subscriptions/0ab6aa66-5156-4738-a3b4-0a731a3b02d4/resourceGroups/AZ-HVnet01-Migrated/providers/Microsoft.Network/virtualNetworks/AZ-HVnet01"
         },
         "virtualMachineName": {
-            "value": "AZ-DC01-CA"
+            "value": "AZ-DC02-US"
         },
         "virtualMachineComputerName": {
-            "value": "AZ-DC01-CA"
+            "value": "AZ-DC02-US"
         },
         "virtualMachineRG": {
-            "value": "RG-DC01-CA"
+            "value": "RG-DC02-US"
         },
         "osDiskType": {
             "value": "StandardSSD_LRS"
@@ -48,8 +48,13 @@
             "value": "moonpie"
         },
         "adminPassword": {
-            "value": null
-        },
+             "reference": {
+                 "keyVault": {
+                     "id": "/subscriptions/0ab6aa66-5156-4738-a3b4-0a731a3b02d4/resourceGroups/RG-GenericSecrets-CA/providers/Microsoft.KeyVault/vaults/KV-GenericSecrets-CA"
+                },
+                 "secretName": "moonpie"
+                }
+            },
         "patchMode": {
             "value": "AutomaticByOS"
         },
@@ -66,13 +71,13 @@
             "value": true
         },
         "backupVaultName": {
-            "value": "AZ-HSVault-Toronto"
+            "value": "AZ-HSVault-US"
         },
         "backupFabricName": {
             "value": "Azure"
         },
         "backupVaultRGName": {
-            "value": "Default-RecoveryServices-ResourceGroup-eastus"
+            "value": "RG-Vault-US"
         },
         "backupVaultRGIsNew": {
             "value": false
@@ -81,7 +86,7 @@
             "value": "HSX-EnhancedPolicy-15Days-Daily"
         },
         "backupItemName": {
-            "value": "vm;iaasvmcontainerv2;RG-DC01-CA;AZ-DC01-CA"
+            "value": "vm;iaasvmcontainerv2;RG-DC02-US;AZ-DC02-US"
         }
     }
 }
